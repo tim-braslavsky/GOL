@@ -436,6 +436,17 @@ public:
 		}
 	}
 
+	virtual void DrawChars(int pos_x, int pos_y, int width, int height, wstring str, short col = 0x000F)
+	{
+		for(int y = 0; y < height; y++)
+			for (int x = 0; x < width; x++)
+			{
+				m_bufScreen[(y + pos_y) * m_nScreenWidth + x + pos_x].Char.UnicodeChar = str[y * width + x];
+				m_bufScreen[(y + pos_y) * m_nScreenWidth + x + pos_x].Attributes = col;
+			}
+		
+	}
+
 	void Fill(int x1, int y1, int x2, int y2, short c = 0x2588, short col = 0x000F)
 	{
 		Clip(x1, y1);
@@ -973,7 +984,6 @@ private:
 			if (OnUserDestroy())
 			{
 				// User has permitted destroy, so exit and clean up
-				delete[] m_bufScreen;
 				SetConsoleActiveScreenBuffer(m_hOriginalConsole);
 				m_cvGameFinished.notify_one();
 			}

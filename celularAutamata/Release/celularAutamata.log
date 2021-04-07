@@ -1,8 +1,11 @@
 ﻿  celularAutamata.cpp
-D:\ProgrammingLearning\C++\Cellular Automata\celularAutamata\celularAutamata\celularAutamata.cpp(28,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\ProgrammingLearning\C++\Cellular Automata\celularAutamata\celularAutamata\celularAutamata.cpp(111,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\ProgrammingLearning\C++\Cellular Automata\celularAutamata\celularAutamata\celularAutamata.cpp(274,39): warning C4018: '<': signed/unsigned mismatch
+D:\ProgrammingLearning\C++\Cellular Automata\celularAutamata\celularAutamata\celularAutamata.cpp(575,50): warning C4018: '<': signed/unsigned mismatch
+D:\ProgrammingLearning\C++\Cellular Automata\celularAutamata\celularAutamata\celularAutamata.cpp(648,35): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  1 of 268 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  432 of 608 functions (71.1%) were compiled, the rest were copied from previous compilation.
+    342 functions were new in current compilation
+    14 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   celularAutamata.vcxproj -> D:\ProgrammingLearning\C++\Cellular Automata\celularAutamata\celularAutamata\Release\celularAutamata.exe
